@@ -18,7 +18,7 @@ jobs:
         # Install depedencies
         npm i
         # build
-        npm run build
+        npm run build-only
         echo 'Deploying to gh-pages...'
         git add dist -f
         git commit -m 'Deploy' 
