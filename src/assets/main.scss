@@ -1,0 +1,47 @@
+@import './tailwind.scss';
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  @apply transition-colors delay-0 ease-in;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-indigo-400 rounded-lg;
+}
+// SLIDE FADE TRANSITION
+.slide-fade-enter-active {
+  transition: all 0.2s ease-in;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+//FADE TRANSITION
+.fade-enter-active {
+  transition: all 0.2s ease-in;
+}
+
+.fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
