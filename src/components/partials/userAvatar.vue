@@ -1,7 +1,10 @@
 <template>
   <div
-    class="rounded-full px-2 py-1.5 text-base font-medium outline-dashed outline-1 w-fit"
-    :class="{ 'bg-orange-400 outline-none': props.userName }"
+    class="rounded-full flex items-center justify-center min-w-7 min-h-7 text-sm font-medium outline-1"
+    :class="{
+      'bg-orange-400  outline-orange-400 outline': props.userName,
+      'outline-dashed': !props.userName
+    }"
   >
     <span v-if="props.userName">{{ userNameAbr }}</span>
     <PersonIcon class="" v-else />

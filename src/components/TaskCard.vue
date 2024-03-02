@@ -33,7 +33,7 @@
       </p>
       <TaskPriority :priority="task.priority" @update-task-priority="updateTaskPriority" />
       <div class="flex items-center gap-3">
-        <userAvatar class="text-sm font-semibold py-1.5" :user-name="task.assignTo" />
+        <userAvatar class="text-sm font-semibold" :user-name="task.assignTo" />
         <span class="text-sm font-semibold text-gray-500">{{ createdAt }} - {{ duoDate }}</span>
       </div>
     </div>
